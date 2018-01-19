@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>BusStops</title>
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"/>
+ <link type="text/css" href="{{ url_for('static', filename='css/hello.css')}}" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+  <p class="BusLine"><strong>Bus Line Number :</strong>{{third}}</p>
+  <p class="BusStop">
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
+    <div style="display: table; vertical-align: middle; padding-top: 50px;">
+    
+      <div style="display: table-cell; width: 70%">
+      <ul>
+       {% set list1 = first.split(',') %}
+       {% for list in list1 %}
+       <p><li>{{list}}</li></p>
+       {% endfor %}
+      </div>
+      <div style="display: table-cell;width:70%">
+       {% set list1 = second.split(',') %}
+       {% for list in list1 %}
+       <p><li>{{list}}</li></p>
+       {% endfor %}
+       </ul>
+  </p>
+     </div>
+  </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+.title {
+  padding-top: 50px;
+  color: darkblue;
+}
+.heading {
+  padding-top: 50px;
+  font-size: 24px;
+  color: blue;
+
+}
+.BusLine {
+  padding-top: 50px;
+  color: darkblue;
+  font-size: 20px;
+}
+.BusStop {
+  color: blue;
+  font-size: 18px;
+}
+.BusStop ul li {
+  list-style-type: square;
+}

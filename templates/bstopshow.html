@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>BusStops</title>
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"/>
+ <link type="text/css" href="{{ url_for('static', filename='css/hello.css')}}" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+  <p class="BusLine"><strong>Bus Stop :</strong>{{third}}</p>
+  <p class="BusStop">
+  {{data}}
+  </div>
+</body>
+</html>
